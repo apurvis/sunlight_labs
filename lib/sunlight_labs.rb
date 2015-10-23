@@ -5,5 +5,5 @@ require 'require_all'
 require 'virtus'
 
 module SunlightLabs
-  require_all 'lib'
+  Dir.glob('lib/**/*.rb') { |f| require_relative f }
 end

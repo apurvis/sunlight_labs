@@ -20,7 +20,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'faraday'
   gem.add_dependency 'faraday_middleware'
-  gem.add_dependency 'require_all'
   gem.add_dependency 'virtus'
 
   gem.add_development_dependency "bundler", "~> 1.10"
