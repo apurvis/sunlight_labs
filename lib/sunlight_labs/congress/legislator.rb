@@ -11,6 +11,7 @@ module SunlightLabs
       attribute :birthday, Date
       attribute :term_end, Date
       attribute :term_start, Date
+      attribute :facebook_id, Integer
 
       def initialize(attributes_hash)
         self.attributes = @attributes = attributes_hash

@@ -1,28 +1,21 @@
 # SunlightLabs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sunlight_labs`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Faraday based Ruby wrapper for Sunlight Labs Congress API
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sunlight_labs'
+gem 'sunlight_labs', github: 'apurvis/sunlight_labs'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install sunlight_labs
-
 ## Usage
 
-TODO: Write usage instructions here
 
 ## Development
 
