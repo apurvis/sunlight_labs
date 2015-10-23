@@ -11,10 +11,17 @@ module SunlightLabs
       attribute :birthday, Date
       attribute :term_end, Date
       attribute :term_start, Date
-      attribute :facebook_id, Integer
+      attr_accessor :facebook_link
 
       def initialize(attributes_hash)
         self.attributes = @attributes = attributes_hash
+        if @attributes['facebook_id']
+          if @attributes['facebook_id'].to_i == 0
+            @facebook_link = "http://facebook.com/#{@attributes['facebook_id']}"
+          else
+            @facebook_link = "http://facebook.com/profile.php?id=#{@attributes['facebook_id']}"
+          end
+        end
       end
 
       def method_missing(name)
